@@ -5,4 +5,4 @@ workspace "graphics"
     }
 
 include "ext"
-include "src"
+include "app"
