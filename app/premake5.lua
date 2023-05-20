@@ -7,7 +7,7 @@ project "app"
     }
 
     filter "system:linux"
-        files { "./platform/linux/**.h", "./platform/linux/**.cpp" }
+        files { "./platform/linux/**.h", "./platform/linux/**.cpp", "./platform/sokol/**.h", "./platform/sokol/**.cpp" }
 
     includedirs
     {
