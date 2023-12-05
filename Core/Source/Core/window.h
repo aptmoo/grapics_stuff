@@ -30,6 +30,9 @@ namespace octo
          */
         virtual void* GetNativeHandle() = 0;
 
+        virtual void* GetNativeDisplay() = 0;
+        virtual void* GetNativeWindow() = 0;
+
         static Scope<Window> Create(const WindowDesc& desc);
     };
 } // namespace name

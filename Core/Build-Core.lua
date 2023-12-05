@@ -13,9 +13,9 @@ project "Core"
 
     includedirs
     {
-        "Source",
-        "Platfom",
-        "Vendor",
+        "./Source",
+        "./Platfom",
+        "./Vendor",
     }
 
     links
@@ -28,11 +28,10 @@ project "Core"
 
     filter "system:windows"
         systemversion "latest"
-        defines { "CORE_WINDOWS" }
+        defines { "PLATFORM_WINDOWS" }
 
     filter "system:linux"
-        systemversion "latest"
-        defines { "CORE_LINUX" }
+        defines { "PLATFORM_LINUX" }
 
     filter "configurations:Debug"
         defines { "DEBUG" }

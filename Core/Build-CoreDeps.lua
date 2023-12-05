@@ -21,6 +21,9 @@ project "GLFW"
         systemversion "latest"
         defines { }
 
+    filter "system:linux"
+        defines { "_GLFW_X11" }
+
     filter "configurations:Debug"
         defines { "DEBUG" }
         runtime "Debug"

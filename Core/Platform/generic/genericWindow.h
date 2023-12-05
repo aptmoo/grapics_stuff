@@ -11,9 +11,12 @@ namespace octo
         GenericWindow(const WindowDesc& desc);
         virtual ~GenericWindow();
 
-        virtual void Update();
+        virtual void Update() override;
 
-        virtual void* GetNativeHandle(){ return m_WindowHandle; };
+        virtual void* GetNativeHandle() override { return m_WindowHandle; };
+
+        virtual void* GetNativeDisplay() override;
+        virtual void* GetNativeWindow() override;
 
     private:
         void* m_WindowHandle;
