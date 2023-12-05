@@ -14,7 +14,7 @@ project "Core"
     includedirs
     {
         "./Source",
-        "./Platfom",
+        "./Platform",
         "./Vendor",
     }
 
