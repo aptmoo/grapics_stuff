@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Forwarding script, to avoid platform and ABI problems.
+# The user should install premake by themselves.
+premake5 ${@:1}

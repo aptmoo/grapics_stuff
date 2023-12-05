@@ -31,6 +31,12 @@
 *.out
 *.app
 
-# Makefiles
-*.make
+# Editor fluff
+*.vscode/
+
+# Premake generated files
 Makefile
+*.make
+
+# Intermidiary files
+./bin-int/*
