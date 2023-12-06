@@ -32,11 +32,11 @@
 *.app
 
 # Editor fluff
-*.vscode/
+.vscode/
 
 # Premake generated files
 Makefile
 *.make
 
-# Intermidiary files
-./bin-int/*
+# Intermidiary files and binaries
+Binaries/
