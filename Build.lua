@@ -15,7 +15,7 @@ group "Core"
 group ""
 
 group "Dependencies"
-
+   include "Core/Build-CoreDeps.lua"
 group ""
 
 include "Sandbox/Build-Sandbox.lua"

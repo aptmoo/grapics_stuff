@@ -54,7 +54,7 @@ namespace octo
     void* GenericWindow::GetNativeWindow()
     {
         #ifdef PLATFORM_LINUX
-        //return (void*)glfwGetX11Window((GLFWWindow*)m_WindowHandle);
+        return (void*)glfwGetX11Window((GLFWwindow*)m_WindowHandle);
         #else
         return nullptr;
         #endif

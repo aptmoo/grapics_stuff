@@ -5,11 +5,11 @@
 
 namespace octo
 {
-    class GenericWindow : public Window
+    class GenericWindow : public IWindow
     {
     public: 
         GenericWindow(const WindowDesc& desc);
-        virtual ~GenericWindow();
+        virtual ~GenericWindow() override;
 
         virtual void Update() override;
 

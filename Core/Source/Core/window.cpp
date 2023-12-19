@@ -3,7 +3,7 @@
 
 namespace octo
 {
-    Scope<Window> Window::Create(const WindowDesc& desc)
+    Scope<IWindow> IWindow::Create(const WindowDesc& desc)
     {
         return MakeScope<GenericWindow>(desc);
     }

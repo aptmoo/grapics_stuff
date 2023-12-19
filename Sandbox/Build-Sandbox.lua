@@ -12,12 +12,12 @@ project "Sandbox"
       "Source",
 
 	  -- Include Core
-	  "../OctoCore/Source"
+	  "../Core/Source"
    }
 
    links
    {
-      "Core"
+      "Core", "GLFW"
    }
 
    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
@@ -25,7 +25,11 @@ project "Sandbox"
 
    filter "system:windows"
        systemversion "latest"
-       defines { "WINDOWS" }
+       defines { "PLATFORM_LINUX" }
+
+    filter "system:linux"
+       defines { "PLATFORM_LINUX" }
+       libdirs { "/usr/lib", "../lib", }
 
    filter "configurations:Debug"
        defines { "DEBUG" }

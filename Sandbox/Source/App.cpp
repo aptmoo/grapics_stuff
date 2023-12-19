@@ -4,5 +4,10 @@ using namespace octo;
 
 int main()
 {
-    Scope<Window> window = Window::Create({"Title", 1280, 720});
+    Scope<IWindow> window = IWindow::Create({"Title", 1280, 720});
+
+    while (true)
+    {
+        window->Update();
+    }
 }

@@ -5,16 +5,17 @@
 
 namespace octo
 { 
+
     struct WindowDesc
     {
         std::string Title;
         u32 Width, Height;
     };
 
-    class Window
+    class IWindow
     {
     public:
-        virtual ~Window() = default;
+        virtual ~IWindow() = default;
 
         /**
          * @brief Update this window.
@@ -33,7 +34,7 @@ namespace octo
         virtual void* GetNativeDisplay() = 0;
         virtual void* GetNativeWindow() = 0;
 
-        static Scope<Window> Create(const WindowDesc& desc);
+        static Scope<IWindow> Create(const WindowDesc& desc);
     };
 } // namespace name
 
